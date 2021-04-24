@@ -1,0 +1,122 @@
+:root {
+  --Bright-orange:  hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan:  hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray:hsl(0, 0%, 95%);
+
+
+}
+/* Reset */
+*{
+    
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+body {
+  font-family: 'Big Shoulders Display';
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Container */
+.container{
+  height: 100vh;
+  width: 70%;
+  min-width: 70%;
+  font-size:1rem ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+ 
+}
+
+/* Cards */
+.container .card1, .card2, .card3{
+  background-color:var(--Bright-orange) ;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 70%;
+  padding: 30px;
+  position: relative;
+  border-radius:  10px 0 0 10px;
+ 
+}
+
+.container .card2{
+  background-color: var(--Dark-cyan);
+  border-radius: unset;
+} 
+
+.container .card3{
+  background-color:var(--Very-dark-cyan);
+   border-radius: 0 10px   10px 0 ;
+
+}
+.img{
+  background-color: red;
+}
+.container  .card1 .img img, .card2 .img img, .card3 .img img {
+  height: 30px;
+
+}
+
+.container div h1{
+  font-weight: 700;
+  font-family: 'Big Shoulders Display', cursive ;
+  margin-bottom: 15px;
+  padding-top: 2rem;
+  color: var(--Very-light-gray);
+}
+.container div p{
+   font-family: 'Lexend Deca', sans-serif;
+  margin-top: 10px;
+  padding-bottom: 5rem;
+      font-size: 15px;
+  font-weight: 400;
+  color: var(--Transparent-white);
+}
+
+.container .card1 .btn,
+.card2 .btn,
+.card3  .btn{
+ display: block;
+ width: 70%;
+ padding: 10px;
+ border: 1px solid;
+ border-radius: 20px;
+ color: var(--Bright-orange);
+ background-color: var(--Very-light-gray);
+ cursor: pointer;
+
+}
+
+.container .card1 .btn:hover{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.container .card2 .btn{
+ color: var(--Dark-cyan);
+
+}
+
+.container .card3  .btn{
+ color:var(--Very-dark-cyan);
+   
+}
